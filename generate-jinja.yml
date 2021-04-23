@@ -2,4 +2,4 @@
   tasks:
     - template:
         src: test.yml.j2
-        dest: /etc/test/a.yml
+        dest: /root/jinjapractice/a.yml
