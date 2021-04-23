@@ -3,7 +3,7 @@
   - name: create stack
     amazon.aws.cloudformation:
       stack_name: "test2"
-      region: "ap-south-1"
       template: "/root/jinjapractice/b.yml"
+      InstanceType: t2.micro
       termination_protection: true
       disable_rollback: true
