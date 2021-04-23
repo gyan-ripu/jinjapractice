@@ -1,11 +1,12 @@
 - hosts: localhost
   tasks:
-      amazon.aws.cloudformation:
-      region: ap-south-1
-      stack_name: test2
-      template:
-          src:  test.yml.j2
-          dest: /root/jinjapractice/b.yml
-      termination_protection: true
-      create_changeset: yes
-      disable_rollback: true
+  - name: create stack
+    amazon.aws.cloudformation:
+    region: "ap-south-1"
+    state: "present"
+    stack_name: "test2"
+    template:
+        src:  "test.yml.j2"
+        dest: "/root/jinjapractice/b.yml"
+    termination_protection: true
+    disable_rollback: true
