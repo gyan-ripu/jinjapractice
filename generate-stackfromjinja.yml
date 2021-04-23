@@ -8,4 +8,4 @@
       disable_rollback: true
       create_changeset: yes
       template_parameters:
-        InstanceType: "t2.medium"
+        InstanceType: "t2.small"
