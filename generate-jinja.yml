@@ -4,11 +4,3 @@
     template:
       src: "test.yml.j2"
       dest: "/root/jinjapractice/b.yml"
-  - name: create stack
-    amazon.aws.cloudformation:
-      stack_name: "test2"
-      region: "ap-south-1"
-      state: "present"
-      template: "/root/jinjapractice/b.yml"
-      termination_protection: true
-      disable_rollback: true
