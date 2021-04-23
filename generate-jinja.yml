@@ -4,11 +4,11 @@
         src: test.yml.j2
         dest: /root/jinjapractice/b.yml
         
-- name:  Setup the NonProd SailPoint Virtual Appliance
-  amazon.aws.cloudformation:
-    region: ap-south-1
-    stack_name: test2
-    template: /root/jinjapractice/b.yml
-    termination_protection: true
-    create_changeset: yes
-    disable_rollback: true
+  - name:  Setup the NonProd SailPoint Virtual Appliance
+    amazon.aws.cloudformation:
+      region: ap-south-1
+      stack_name: test2
+      template: /root/jinjapractice/b.yml
+      termination_protection: true
+      create_changeset: yes
+      disable_rollback: true
