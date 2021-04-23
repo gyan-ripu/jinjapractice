@@ -6,5 +6,6 @@
       template: "/root/jinjapractice/b.yml"
       termination_protection: true
       disable_rollback: true
+      create_changeset: yes
       template_parameters:
         InstanceType: "t2.medium"
