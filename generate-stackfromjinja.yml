@@ -4,6 +4,7 @@
     amazon.aws.cloudformation:
       stack_name: "test2"
       template: "/root/jinjapractice/b.yml"
-      InstanceType: t2.micro
       termination_protection: true
       disable_rollback: true
+      template_parameters:
+      InstanceType: t2.micro
