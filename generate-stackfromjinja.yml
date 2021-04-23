@@ -7,4 +7,4 @@
       termination_protection: true
       disable_rollback: true
       template_parameters:
-      InstanceType: t2.micro
+      InstanceType: "t2.micro"
