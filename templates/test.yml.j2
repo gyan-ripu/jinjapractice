@@ -17,6 +17,10 @@ Parameters:
     Type: String
     AllowedValues: [ t2.small,t2.medium,t2.large,t3.small,t3.medium,t3.large,t3.xlarge,c4.large,c4.xlarge,c4.2xlarge,c4.4xlarge,c5.xlarge,m4.large,m5.large,m4.xlarge,m4.2xlarge,m4.4xlarge,m5.xlarge,m5a.large,m5a.xlarge,r4.large,r4.xlarge,r3.xlarge,r5a.xlarge ]
     Default: c4.large
+  Hostname:
+    Description: The name to be given to the host
+    Type: String
+    Default: 'wp5-adfs03'  
 Mappings:
   AWSRegionArch2AMI:
     us-east-1:
@@ -88,3 +92,6 @@ Resources:
         SubnetId:
           Fn::ImportValue:
             Fn::Sub: "${NetworkStackName}-SubnetID"
+      Tags:
+      - Key: "Name"
+        Value: !Ref Hostname
