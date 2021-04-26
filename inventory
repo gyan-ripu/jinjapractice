@@ -1,1 +1,2 @@
-web1 hostname=ansiblejinjatest1 instance_type=t2.small
+hostname: ansiblejinjatest1 
+instance_type: t2.small
