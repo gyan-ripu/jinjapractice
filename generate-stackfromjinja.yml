@@ -1,4 +1,4 @@
-- hosts: web1
+- hosts: localhost
   tasks:
   - name: create stack
     amazon.aws.cloudformation:
