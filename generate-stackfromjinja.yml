@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: web1
   tasks:
   - name: create stack
     amazon.aws.cloudformation:
@@ -8,5 +8,5 @@
       disable_rollback: true
       create_changeset: yes
       template_parameters:
-        InstanceType: "t2.small"
-        Hostname: "ansiblejinjatest1"
+        InstanceType: "{{ instance_type }}"
+        Hostname: "{{ hostname  }}"
