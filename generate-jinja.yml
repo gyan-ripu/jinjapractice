@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: web1
   tasks:
   - name: expand Jinja 
     template:
