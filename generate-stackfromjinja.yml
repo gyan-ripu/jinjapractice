@@ -9,3 +9,4 @@
       create_changeset: yes
       template_parameters:
         InstanceType: "t2.small"
+        Hostname: "ansiblejinjatest1"
