@@ -9,5 +9,5 @@
       disable_rollback: true
       create_changeset: yes
       template_parameters:
-        InstanceType: "{{ instance_type }}"
-        Hostname: "{{ hostname  }}"
+        InstanceType: {{ instance_type }}
+        Hostname: {{ hostname  }}
