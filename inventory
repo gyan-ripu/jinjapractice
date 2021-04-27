@@ -1,1 +1,1 @@
-localhost instance_type=t2.small hostname=ansiblejinjatest1
+localhost hostname=ansiblejinjatest1
