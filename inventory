@@ -1,1 +1,2 @@
-localhost hostname=ansiblejinjatest1
+[web_servers]
+web1
