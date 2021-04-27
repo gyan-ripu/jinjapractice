@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: web1
   connection: local
   tasks:
   - name: create stack
