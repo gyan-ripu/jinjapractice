@@ -10,3 +10,4 @@
       create_changeset: yes
       template_parameters:
         Hostname: "{{ hostname }}"
+        InstanceType: "{{ instance_type }}"
