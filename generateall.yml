@@ -8,7 +8,7 @@
       
   - name: create stack
     amazon.aws.cloudformation:
-      stack_name: "testall"
+      stack_name: "test-{{ hostname }}-stack"
       template: "/root/jinjapractice/b.yml"
       termination_protection: true
       disable_rollback: true
