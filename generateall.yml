@@ -16,3 +16,6 @@
       template_parameters:
         Hostname: "{{ hostname }}"
         InstanceType: "{{ instance_type }}"
+        tags:
+          name: "{{ hostname }}"
+        
