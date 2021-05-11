@@ -6,3 +6,5 @@
     amazon.aws.cloudformation_info:
       stack_name: test-ansiblejinjatest1
     register: output
+  -debug:
+      msg: "{{ output.cloudformation[stack_name] }}"
