@@ -1,0 +1,4 @@
+- name: Get summary information about a stack
+  amazon.aws.cloudformation_info:
+    stack_name: my-cloudformation-stack
+  register: output
