@@ -1,4 +1,9 @@
-- name: Get summary information about a stack
+- name: Deploy resources for SailPoint IdentityNow in Non-Prod VPC
+  hosts: localhost
+  connection: local
+  gather_facts: true
+ 
+  - name: Get summary information about a stack
   cloudformation_info:
     stack_name: test-ansiblejinjatest1
   register: output
