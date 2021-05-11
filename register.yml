@@ -1,8 +1,8 @@
-hosts: localhost
-connection: local
-gather_facts: true
-tasks: 
-- name: Get summary information about a stack
-  amazon.aws.cloudformation_info:
-    stack_name: test-ansiblejinjatest1
-  register: output
+- hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks: 
+  - name: Get summary information about a stack
+    amazon.aws.cloudformation_info:
+      stack_name: test-ansiblejinjatest1
+    register: output
