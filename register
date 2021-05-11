@@ -1,4 +1,4 @@
 - name: Get summary information about a stack
-  amazon.aws.cloudformation_info:
+  cloudformation_info:
     stack_name: test-ansiblejinjatest1
   register: output
