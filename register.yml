@@ -7,4 +7,4 @@
       stack_name: test-ansiblejinjatest1
     register: output
   - debug:
-      msg: "{{ output.cloudformation[stack_name] }}"
+      msg: "{{ output.cloudformation[test-ansiblejinjatest1] }}"
