@@ -4,4 +4,7 @@ multiple:
   instance_type: t2.small
   
 - hostname: ansiblejinjatest2
-  instance_type: t2.medium 
+  instance_type: t2.medium
+
+- hostname: ansiblejinjatest3
+  instance_type: t2.large
