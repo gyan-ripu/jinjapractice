@@ -9,14 +9,14 @@
       
   - name: create stack
     amazon.aws.cloudformation:
-      stack_name: "test-{{ hostname }}"
+      stack_name: "test-{{ item.hostname }}"
       template: "/root/jinjapractice/b.yml"
       termination_protection: true
       disable_rollback: true
       create_changeset: yes
       template_parameters:
-        Hostname: "{{ hostname }}"
-        InstanceType: "{{ instance_type }}"
+        Hostname: "{{ item.hostname }}"
+        InstanceType: "{{ item.instance_type }}"
       tags:
-        name: "{{ hostname }}"
-        
+        owner: "gyan-{{ item.hostname }}"
+    loop: "{{ multiple }}"    
