@@ -1,2 +1,7 @@
-hostname: ansiblejinjatest1
-instance_type: t2.small
+multiple:
+
+- hostname: ansiblejinjatest1
+  instance_type: t2.small
+  
+- hostname: ansiblejinjatest2
+  instance_type: t2.medium 
