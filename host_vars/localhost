@@ -8,3 +8,6 @@ multiple:
 
 - hostname: ansiblejinjatest3
   instance_type: t2.large
+
+- hostname: ansiblejinjatest4
+  instance_type: t2.large
