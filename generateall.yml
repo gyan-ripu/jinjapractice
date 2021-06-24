@@ -1,5 +1,5 @@
 - hosts: test
-  connection: local
+  #connection: local
   gather_facts: false
   tasks:
   - name: Assume role
