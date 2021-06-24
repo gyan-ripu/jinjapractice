@@ -1,1 +1,17 @@
-fhgjg
+# Specify AWS region
+region: 'ap-southeast-2'
+
+# Specify separator for splitting an AWS account name into groups.
+account_name_separator: '-'
+
+# Enable or disable dynamic AWS account inventory. Set this option to 'false' if AWS organisations is not present.
+# Defaults to 'True'.
+dynamic_inventory: False
+
+# Specify a list of account mappings (name and id). Use this option ONLY if `dynamic_inventory` option is set to `False`.
+#account_list:
+#  - name: 'org-role-env'
+#    id: '012345678912'
+account_list:
+  - name: test
+    id: '603651671970'
