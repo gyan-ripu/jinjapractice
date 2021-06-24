@@ -1,1 +1,3 @@
-
+accounts:
+  - account_alias: "test"
+    account_number: "603651671970"
