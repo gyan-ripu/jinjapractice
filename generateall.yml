@@ -1,4 +1,4 @@
-- hosts: test
+- hosts: all
   #connection: local
   gather_facts: false
   tasks:
