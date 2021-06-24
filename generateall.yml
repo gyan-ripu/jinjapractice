@@ -2,6 +2,12 @@
   connection: local
   gather_facts: false
   tasks:
+  - name: Assume role
+    community.aws.sts_assume_role:
+      role_arn: "arn:aws:iam::603651671970:role/ReplatformPipelineBuildRole"
+      role_session_name: "someRoleSession"
+    register: assumed_role
+    
   - name: expand Jinja 
     template:
       src: "test.yml.j2"
