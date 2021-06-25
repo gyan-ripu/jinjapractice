@@ -1,1 +1,18 @@
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+  - name: Assume role
+    community.aws.sts_assume_role:
+      role_arn: "arn:aws:iam::603651671970:role/ReplatformPipelineBuildRole"
+      role_session_name: "someRoleSession"
+    register: assumed_role
+    
+
+      
+  - name: create stack
+    amazon.aws.cloudformation:
+      aws_access_key: "{{ (sts_creds|default({})).access_key|default() }}"
+      aws_secret_key: "{{ (sts_creds|default({})).secret_key|default() }}"
+      security_token: "{{ (sts_creds|default({})).session_token|default() }}"
 
