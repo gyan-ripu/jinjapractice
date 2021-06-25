@@ -8,8 +8,6 @@
       role_session_name: "someRoleSession"
     register: assumed_role
     
-
-      
   - name: create stack
     amazon.aws.cloudformation:
       aws_access_key: "{{ (sts_creds|default({})).access_key|default() }}"
