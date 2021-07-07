@@ -1,4 +1,4 @@
-- hosts: test
+- hosts: localhost
   connection: local
   gather_facts: false
   tasks:
@@ -15,9 +15,9 @@
       
   - name: create stack
     amazon.aws.cloudformation:
-      aws_access_key: "{{ (sts_creds|default({})).access_key|default() }}"
-      aws_secret_key: "{{ (sts_creds|default({})).secret_key|default() }}"
-      security_token: "{{ (sts_creds|default({})).session_token|default() }}"
+      aws_access_key: "{{ assumed_role.sts_creds.access_key }}"
+      aws_secret_key: "{{ assumed_role.sts_creds.secret_key }}"
+      security_token: "{{ assumed_role.sts_creds.session_token }}"
       stack_name: "test-{{ item.hostname }}"
       template: "/root/jinjapractice/b.yml"
       termination_protection: true
