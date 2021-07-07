@@ -6,8 +6,8 @@ multiple:
 - hostname: ansiblejinjatest2
   instance_type: t2.medium
 
-- hostname: ansiblejinjatest3
-  instance_type: t2.large
+#- hostname: ansiblejinjatest3
+  #instance_type: t2.large
 
-- hostname: ansiblejinjatest4
-  instance_type: t2.large
+#- hostname: ansiblejinjatest4
+  #instance_type: t2.large
