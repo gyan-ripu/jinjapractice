@@ -16,9 +16,7 @@
   #- name: error 
    # debug:
     #  msg: "{{ assumed_role.sts_creds.access_key }}"    
-      
- 
-      
+         
   - name: create stack
     amazon.aws.cloudformation:
     #  aws_access_key: "{{ assumed_role.sts_creds.access_key }}"
