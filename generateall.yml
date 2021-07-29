@@ -13,7 +13,7 @@
       src: "test.yml.j2"
       dest: "/root/jinjapractice/b.yml"
     
-    - name: error 
+  - name: error 
     debug:
       msg: "{{ assumed_role.sts_creds.access_key }}"    
       
