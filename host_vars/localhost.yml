@@ -8,8 +8,8 @@ multiple:
   instance_type: t2.medium
   product: linux
 
-#- hostname: ansiblejinjatest3
-  #instance_type: t2.large
+- hostname: ansiblejinjatest3
+  instance_type: t2.large
 
 #- hostname: ansiblejinjatest4
   #instance_type: t2.large
