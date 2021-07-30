@@ -30,6 +30,7 @@
       template_parameters:
         Hostname: "{{ item.hostname }}"
         InstanceType: "{{ item.instance_type }}"
+        Product: "{{ item.product }}"
       tags:
         owner: "gyan-{{ item.hostname }}"
     loop: "{{ multiple }}"    
