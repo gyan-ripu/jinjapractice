@@ -2,9 +2,11 @@ multiple:
 
 - hostname: ansiblejinjatest1
   instance_type: t2.small
+  product: linux
   
 - hostname: ansiblejinjatest2
   instance_type: t2.medium
+  product: linux
 
 #- hostname: ansiblejinjatest3
   #instance_type: t2.large
