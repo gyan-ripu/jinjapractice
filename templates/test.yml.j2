@@ -24,6 +24,11 @@ Parameters:
     Type: AWS::EC2::KeyPair::KeyName
     Description: Public/private key pairs allow you to securely connect to your instance after it launches
     Default: ec2-mumbai
+  Product:
+    Description: The type of product
+    Type: String
+    AllowedValues: [ win, linux ]
+    Default: 'linux'
 
 Mappings:
   AWSRegionArch2AMI:
@@ -100,3 +105,5 @@ Resources:
       Tags:
       - Key: "Name"
         Value: !Ref Hostname
+      - Key: "info:product"
+        Value: !Ref Product
